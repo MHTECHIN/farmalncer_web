@@ -80,7 +80,7 @@
 /* Auto Height */
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {
-  height: auto;
+  height: hidden;
 }
 .swiper-container-autoheight .swiper-wrapper {
   -webkit-box-align: start;
@@ -270,7 +270,7 @@
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  display: inline-block;
+  display: hidden;
   border-radius: 100%;
   background: #000;
   opacity: 0.2;
@@ -532,10 +532,10 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  pointer-events: none;
 }
 .swiper-container-cube {
-  overflow: visible;
+  overflow: hidden;
 }
 .swiper-container-cube .swiper-slide {
   pointer-events: none;
@@ -559,14 +559,14 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-cube .swiper-slide-active,
 .swiper-container-cube .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  pointer-events: none;
 }
 .swiper-container-cube .swiper-slide-active,
 .swiper-container-cube .swiper-slide-next,
 .swiper-container-cube .swiper-slide-prev,
 .swiper-container-cube .swiper-slide-next + .swiper-slide {
-  pointer-events: auto;
-  visibility: visible;
+  pointer-events: none;
+  visibility: hidden;
 }
 .swiper-container-cube .swiper-slide-shadow-top,
 .swiper-container-cube .swiper-slide-shadow-bottom,
@@ -589,7 +589,7 @@ button.swiper-pagination-bullet {
   z-index: 0;
 }
 .swiper-container-flip {
-  overflow: visible;
+  overflow: hidden;
 }
 .swiper-container-flip .swiper-slide {
   pointer-events: none;
@@ -602,7 +602,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-flip .swiper-slide-active,
 .swiper-container-flip .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  pointer-events: none;
 }
 .swiper-container-flip .swiper-slide-shadow-top,
 .swiper-container-flip .swiper-slide-shadow-bottom,
