@@ -2200,5 +2200,28 @@ a:hover.back-to-top {
 		margin-left: 1.75rem;
 	}
 	/* end of extra pages */
+	.tab-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tab-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;  /* Adjust the space between the image and content */
+}
+
+.tab-image {
+    max-width: 200px;  /* Adjust the size of the image */
+    height: auto;
+}
+
+.tab-content-text {
+    flex: 1;
+}
+
+
 }
 /* end of min-width 1200px */

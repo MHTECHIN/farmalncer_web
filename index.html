@@ -291,20 +291,24 @@
                         <!-- Tabs Links -->
                         <ul class="nav nav-tabs" id="cedoTabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="far fa-clock"></i>Schedule</a>
+                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true" onclick="changeTab('schedule')">
+                                    <i class="far fa-clock"></i> Schedule
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-list"></i>Tracking</a>
+                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false" onclick="changeTab('tracking')">
+                                    <i class="fas fa-list"></i> Tracking
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="far fa-calendar-alt"></i>Organize</a>
+                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false" onclick="changeTab('organize')">
+                                    <i class="far fa-calendar-alt"></i> Organize
+                                </a>
                             </li>
                         </ul>
-                        <!-- end of tabs links -->
                         
                         <!-- Tabs Content -->
                         <div class="tab-content" id="cedoTabsContent">
-                            <!-- Tab -->
                             <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                                 <p><strong>Schedule tasks</strong> to keep track of their completion. Farmlancer provides multiple scheduling options including notification.</p>
                                 <ul class="list-unstyled li-space-lg">
@@ -321,20 +325,10 @@
                                         <div class="media-body"> Create a task post in just a few steps. Enter the details of the job, including the type of work, duration, and any specific skills needed.</div>
                                     </li>
                                 </ul>
+                                    <!-- More list items -->
+                                </ul>
                                 <a class="btn-solid-reg page-scroll" href="terms-conditions.html">TERMS</a> <a class="btn-outline-reg page-scroll" href="privacy-policy.html">PRIVACY</a>
-                            </div> <!-- end of tab-pane -->
-                            <!-- end of tab -->
-
-                            <!-- Tab -->
-                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                                <p><strong>Keep track of everything</strong> and analyse your progress while using the app. In less than a month you should be seeing improved results when it comes to time management and task prioritization</p>
-                                <p><strong>Anyone can enjoy the app</strong> no matter their gender, age, occupation or location in the world. Sync's algorithms have been built to be flexible and functional for any person in the world</p>
-                                <p><strong>Achieve the impossible</strong> just by carefully monitoring your progress and keeping the app updated with daily operations. It's easier than you think and it only takes a couple of minutes</p>
-                                <a class="red" href="terms-conditions.html">Terms & Conditions >></a>
-                            </div> <!-- end of tab-pane -->
-                            <!-- end of tab -->
-
-                            <!-- Tab -->
+                            </div>
                             <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
                                 <p><strong>Use the power of social interactivity</strong> to keep you motivated and focused on your daily and long term goals. It's revolutionary</p>
                                 <ul class="list-unstyled li-space-lg">
@@ -355,18 +349,88 @@
                                         <div class="media-body">Recognized by a lot of trainers and life coaches Sync is the number one tool they recommend time management</div>
                                     </li>
                                 </ul>
-                            </div> <!-- end of tab-pane -->
-                            <!-- end of tab -->
-                        </div> <!-- end of tab-content -->
-                        <!-- end of nav tabs content -->
-                    
-                    </div> <!-- end of tabs-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img src="images/Home menu.png" alt="alternative" style="width: 50%; height: auto;">
-
-                    </div> <!-- end of image-container -->
+                            </div>
+                        
+                        <!-- Image Container -->
+                        <div class="col-lg-6">
+                            <div class="image-container">
+                                <img id="homeMenuImage" src="images/Home menu.png" alt="alternative" style="width: 50%; height: auto;">
+                            </div>
+                        </div>
+                        
+                        <!-- Inline JavaScript -->
+                        <script>
+                            function changeTab(tab) {
+                                var imageSrc = '';
+                                var tabContent = '';
+                                
+                                // Assign content and image source based on the selected tab
+                                if (tab === 'schedule') {
+                                    imageSrc = 'images/Storage.png';
+                                    tabContent = `
+                                        <p><strong>Schedule tasks</strong> to keep track of their completion. Farmlancer provides multiple scheduling options including notifications.</p>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">Assign specific tasks to your workers with just a few clicks. Ensure that everyone knows their responsibilities and deadlines.</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">Collaborate with your team through the app. Share task lists and schedules, communicate directly with workers, and ensure everyone is on the same page.</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">Create a task post in just a few steps. Enter the details of the job, including the type of work, duration, and any specific skills needed.</div>
+                                            </li>
+                                        </ul>
+                                        <a class="btn-solid-reg page-scroll" href="terms-conditions.html">TERMS</a>
+                                        <a class="btn-outline-reg page-scroll" href="privacy-policy.html">PRIVACY</a>
+                                    `;
+                                } else if (tab === 'tracking') {
+                                    imageSrc = 'images/screenshot-7.jpg';
+                                    tabContent = `
+                                        <p><strong>Keep track of everything</strong> and analyze your progress while using the app. In less than a month, you should be seeing improved results when it comes to time management and task prioritization.</p>
+                                        <p><strong>Anyone can enjoy the app</strong> no matter their gender, age, occupation, or location in the world. Sync's algorithms have been built to be flexible and functional for any person in the world.</p>
+                                        <p><strong>Achieve the impossible</strong> just by carefully monitoring your progress and keeping the app updated with daily operations. It's easier than you think, and it only takes a couple of minutes.</p>
+                                        <a class="red" href="terms-conditions.html">Terms & Conditions >></a>
+                                    `;
+                                } else if (tab === 'organize') {
+                                    imageSrc = 'images/screenshot-9.jpg';
+                                    tabContent = `
+                                        <p><strong>Use the power of social interactivity</strong> to keep you motivated and focused on your daily and long-term goals. It's revolutionary.</p>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">Committing to something in front of a crowd gives you little room to walk back on your promise and makes you push on.</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">No more frustrations of losing focus and not being efficient. Sync's main purpose is to solve just that and make you happy.</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">It's the first mobile app that can turn you into a better organized person without the pressure of failing like other systems.</div>
+                                            </li>
+                                            <li class="media">
+                                                <i class="far fa-check-square"></i>
+                                                <div class="media-body">Recognized by many trainers and life coaches, Sync is the number one tool they recommend for time management.</div>
+                                            </li>
+                                        </ul>
+                                    `;
+                                }
+                                
+                                // Change the image and tab content dynamically
+                                document.getElementById('homeMenuImage').src = imageSrc;
+                                document.querySelector('#cedoTabsContent .tab-pane.active').innerHTML = tabContent;
+                                
+                                // Update active class for tabs
+                                document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                                document.querySelector(`#nav-tab-${tab === 'schedule' ? 1 : tab === 'tracking' ? 2 : 3}`).classList.add('active');
+                            }
+                        </script>
+                        
+                        
+                         <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
