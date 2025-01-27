@@ -57,6 +57,7 @@ body, p {
 
 .p-small {
 	font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
+	 
 }
 
 .p-heading {
@@ -1369,7 +1370,7 @@ input[type='checkbox'] {
 
 .footer .footer-col {
 	display: inline-block;
-	width: 14.5rem;
+	width: 30rem;
     margin-right: 1rem;
 	margin-bottom: 1.5rem;
     vertical-align: top;
@@ -2158,8 +2159,9 @@ a:hover.back-to-top {
 	/* Footer */
 	.footer .footer-col.first {
 		display: inline-block;
-		width: 14rem;
-		margin-right: 2.5rem;
+		width: 25%;
+		margin: 0 auto;
+		/* margin-right: 2.5rem; */
 	}
 	
 	.footer .footer-col.second {
@@ -2200,5 +2202,20 @@ a:hover.back-to-top {
 		margin-left: 1.75rem;
 	}
 	/* end of extra pages */
+	.footer-col.fifth p,
+	.footer-col.fourth p,
+	.footer-col.third p,
+	.footer-col.second p,
+	.footer-col.first p
+	{
+		margin: 0; /* Removes top and bottom margin */
+		line-height: 2; /* Adjusts spacing between lines */
+	}
+	.descript {
+		margin-bottom: 80px;
+  		line-height: 5; 
+	}
+	
+	  
 }
 /* end of min-width 1200px */
