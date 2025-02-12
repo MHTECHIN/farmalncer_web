@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edit your profile details including name, email, and mobile number.">
+    <meta name="keywords" content="profile edit, user profile, update details, account settings">
+    <meta name="robots" content="index, follow">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Profile</h2>
+        <div class="profile-picture">
+            <img src="ppp.jpg" alt="Profile Picture" id="profileImg">
+            <input type="file" id="fileInput" accept="image/*" hidden>
+            <span class="edit-icon" onclick="uploadImage()">📷</span>
+        </div>
+        <form id="profileForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address">
+            
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" placeholder="+62 xxxxxxxxxx">
+            
+            <button type="submit">Submit Details</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <nav>
+            <a href="#" class="active"><img src="home-icon.png" alt="Home"></a>
+            <a href="#"><img src="cloud-icon.png" alt="Weather"></a>
+            <a href="#"><img src="star-icon.png" alt="Featured"></a>
+            <a href="#"><img src="plant-icon.png" alt="Agriculture"></a>
+            <a href="#"><img src="user-icon.png" alt="Profile"></a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

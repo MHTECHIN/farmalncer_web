@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enable notifications to receive important updates and reminders.">
+    <meta name="keywords" content="notifications, app settings, alerts, reminders, updates">
+    <meta name="robots" content="index, follow">
+    <title>Enable Notifications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #A8E063, #F9F9F9);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-enable {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-skip {
+            background-color: transparent;
+            border: 2px solid #4CAF50;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="2604057.png" alt="Notification Icon" class="icon">
+        <h2>Notification</h2>
+        <p>Please enable notifications to receive updates and reminders</p>
+        <button class="button btn-enable" onclick="enableNotifications()">Turn on</button>
+        <button class="button btn-skip" onclick="skipNotifications()">Skip for now</button>
+    </div>
+
+    <script>
+        function enableNotifications() {
+            alert("Notifications enabled");
+        }
+        function skipNotifications() {
+            alert("You skipped notifications");
+        }
+    </script>
+</body>
+</html>

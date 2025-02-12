@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.weather-card {
+    background: #3b82f6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hourly-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.detail {
+    text-align: center;
+    font-size: 14px;
+}
+
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

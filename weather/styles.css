@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location-time {
+    margin-bottom: 10px;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+}
+
+.current-temp {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.condition {
+    font-size: 16px;
+    color: #666;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.detail {
+    text-align: center;
+    font-size: 14px;
+}
+
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hour {
+    text-align: center;
+    font-size: 14px;
+}
+
+.condition-solution {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article {
+    margin-bottom: 10px;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.article-content {
+    font-size: 14px;
+    color: #666;
+}
+
+.article-info {
+    font-size: 12px;
+    color: #999;
+}
+
+.show-more {
+    text-align: center;
+    color: #007BFF;
+    cursor: pointer;
+}

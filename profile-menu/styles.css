@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.profile-container {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    text-align: justify;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    background: grey;
+    border-radius: 50%;
+}
+.settings, .support {
+    text-align: left;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+.footer nav a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        width: 95%;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
