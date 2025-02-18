@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="sty1.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <p class="location">&#128205; Kedaton Boulevard, kec. Mijen</p>
+    </header>
+    
+    <main>
+        <section class="weather-card">
+            <p class="date">DD, DD/MM/YY</p>
+            <p class="time">x.xx PM</p>
+            <div class="weather-info">
+                <span class="icon">&#9729;</span>
+                <p class="temperature">xx&deg;C</p>
+                <p class="condition">Lorem Ipsum</p>
+            </div>
+            <div class="weather-details">
+                <div class="detail">
+                    <span>77%</span>
+                    <span>Humidity</span>
+                </div>
+                <div class="detail">
+                    <span>0.01in</span>
+                    <span>Precipitation</span>
+                </div>
+                <div class="detail">
+                    <span>6kph/s</span>
+                    <span>Wind Speed</span>
+                </div>
+            </div>
+            <div class="hourly-forecast">
+                <div class="hour">4.00PM <br> 20°</div>
+                <div class="hour">5.00PM <br> 20°</div>
+                <div class="hour">6.00PM <br> 19°</div>
+                <div class="hour">7.00PM <br> 19°</div>
+            </div>
+        </section>
+        
+        <section class="hourly-weather">
+            <h2>Weather per hour</h2>
+            <div class="hourly-container">
+                <div class="hourly-item">
+                    <p class="temperature">20&deg;</p>
+                    <p class="time">4:00 PM</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="temperature">20&deg;</p>
+                    <p class="time">5:00 PM</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="temperature">19&deg;</p>
+                    <p class="time">6:00 PM</p>
+                </div>
+                <div class="hourly-item">
+                    <p class="temperature">19&deg;</p>
+                    <p class="time">7:00 PM</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="condition-solution">
+            <h2>Condition & Solution</h2>
+            <div class="article">
+                <p class="title">Lorem ipsum dolor sit amet.</p>
+                <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="meta">5 min read - 17 hours ago</p>
+            </div>
+        </section>
+    </main>
+    
+    <div class="footer">
+        <div class="footer-icons">
+            <span onclick="window.location.href='main.html'" style="cursor:pointer;">🏠</span>
+            <span onclick="window.location.href='wea1.html'" style="cursor:pointer;">☁️</span>
+            <span onclick="window.location.href='work-screen.html'" style="cursor:pointer;">⭐</span>
+            <span onclick="window.location.href='news.html'" style="cursor:pointer;">🌱</span>
+            <span onclick="window.location.href='profile-m.html'" style="cursor:pointer;">👤</span>
+        </div>
+    </div>
+</body>
+</html>

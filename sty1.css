@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+/* Weather Card */
+.weather-card {
+    background: #3b82f6;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.detail {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Hourly Forecast */
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.hour {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    min-width: 60px;
+}
+
+/* Hourly Weather */
+/* Hourly Weather */
+.hourly-weather {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hourly-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.hourly-item {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.hourly-item .temperature {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hourly-item .time {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Condition & Solution */
+.condition-solution {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article .summary {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.article .meta {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Bottom Navigation */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    padding: 5px 0;
+}
+
+.footer-icons span {
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .weather-card {
+        max-width: 90%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hourly-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}

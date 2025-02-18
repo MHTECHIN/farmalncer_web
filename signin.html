@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your FarmLancer account by MHTECHIN Technologies to manage your agricultural tasks efficiently.">
+    <meta name="keywords" content="FarmLancer, MHTECHIN, agriculture, sign in, farming, mobile app">
+    <meta name="author" content="MHTECHIN Technologies">
+    <title>FarmLancer Sign In</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+    <div class="signin-container">
+        <h1>FarmLancer</h1>
+        <p>by MHTECHIN Technologies</p>
+        <h3>Sign in to your account</h3>
+        <form id="signin-form" action="sign-in.php" method="POST">
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile no" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <label>
+                <input type="checkbox" id="agree-terms" name="agree-terms"> I've read and agreed to User Agreement and Privacy Policy
+            </label>
+            <button type="submit">Sign in</button>
+        </form>
+        <div class="other-options">
+            <p>Other way to sign in</p>
+            <p>Don't have an account? <a href="sign-up1.html">Create Account</a></p>
+        </div>
+    </div>
+    <script src="sign-in.js"></script>
+</body>
+</html>
