@@ -80,7 +80,7 @@
 /* Auto Height */
 .swiper-container-autoheight,
 .swiper-container-autoheight .swiper-slide {
-  height: auto;
+  height: hidden;
 }
 .swiper-container-autoheight .swiper-wrapper {
   -webkit-box-align: start;
@@ -270,7 +270,7 @@
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  display: inline-block;
+  display: hidden;
   border-radius: 100%;
   background: #000;
   opacity: 0.2;
@@ -532,7 +532,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active {
-  pointer-events: auto;
+  pointer-events: none;
 }
 .swiper-container-cube {
   overflow: hidden;
